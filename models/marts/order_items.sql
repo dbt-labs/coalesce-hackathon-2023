@@ -2,25 +2,25 @@ with
 
 order_items as (
 
-    select * from {{ ref('stg_order_items') }}
+    select * from {{ ref('hackathon_parent', 'stg_order_items') }}
 
 ),
 
 
 orders as (
 
-    select * from {{ ref('stg_orders') }}
+    select * from {{ ref('hackathon_parent', 'stg_orders') }}
 ),
 
 products as (
 
-    select * from {{ ref('stg_products') }}
+    select * from {{ ref('hackathon_parent', 'stg_products') }}
 
 ),
 
 supplies as (
 
-    select * from {{ ref('stg_supplies') }}
+    select * from {{ ref('hackathon_parent', 'stg_supplies') }}
 
 ),
 

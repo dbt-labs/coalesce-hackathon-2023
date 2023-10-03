@@ -2,7 +2,7 @@ with
 
 supplies as (
 
-    select * from {{ ref('stg_supplies') }}
+    select * from {{ ref('hackathon_parent', 'stg_supplies') }}
 
 )
 

@@ -11,7 +11,7 @@ models:
         description: The foreign key relating to the customer who placed the order.
         tests:
           - relationships:
-              to: ref('stg_customers')
+              to: ref('hackathon_parent', 'stg_customers')
               field: customer_id
       - name: order_total
         description: The total amount of the order in USD including tax.

@@ -2,7 +2,7 @@ with
 
 products as (
 
-    select * from {{ ref('stg_products') }}
+    select * from {{ ref('hackathon_parent', 'stg_products') }}
 
 )
 

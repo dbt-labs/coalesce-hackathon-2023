@@ -2,7 +2,7 @@ with
 
 orders as (
 
-    select * from {{ ref('stg_orders') }}
+    select * from {{ ref('hackathon_parent', 'stg_orders') }}
 
 ),
 
