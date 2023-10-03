@@ -1,2 +1,3 @@
 logs/dbt.log
 target
+.DS_Store
