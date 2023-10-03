@@ -1,1 +1,0 @@
-select * from {{ ref('hackathon_parent', 'survey_responses') }}
